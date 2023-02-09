@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+/* ændre alle billeder i klassen nav */
+
+.header {
+  grid-area: header;
+  background-color: #e8e3c7;
+  min-height: 15vh;
+  text-align: center;
+}
+.header h1 {
+  font-family: "Dancing Script", cursive;
+}
+
+.header p {
+  font-family: "Dancing Script", cursive;
+}
+
+.nav img {
+  width: 400px;
+}
+.nav {
+  min-height: 70vh;
+  grid-area: nav;
+  background-color: #b85b3f;
+}
+
+.article {
+  min-height: 10vh;
+  grid-area: article;
+  background-color: #d4ceb0;
+}
+
+section h2 {
+  margin-left: 20px;
+}
+
+div {
+  margin: 10px;
+  padding-top: 100px;
+  text-align: center;
+}
+ul,
+ol {
+  text-align: center;
+  list-style-type: none;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #b85b3f;
+  text-align: left;
+  padding-left: 30px;
+  /* margin-top: -66px; */
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #a65238;
+  margin-bottom: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "header header  "
+    "nav article "
+    "aside aside "
+    "footer footer ";
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+.article-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+}
+
+/* @media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+} */
